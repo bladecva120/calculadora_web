@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div id="calculadora">
+            <!-- Título da calculadora-->
+            <h2 class="titulo">Advanced Calculator</h2>
+
+            <!-- Subtitulo-->
+            <nav class="subTitulo">
+                <p>Scientific tools + memory + history</p>
+            </nav>
+
+            <!-- Tela display-->
+            <div class="display">0</div>
+
+            <!-- criação dos botões-->
+            <div class="botoes">
+                <button class="botao" id="ce">CE</button>
+                <button class="botao" id="ac">AC</button>
+                <button class="botao" id="backSpace"></button>
+                <button class="botao" id="divisao">/</button>
+                <button class="botao" id="porcentagem">%</button>
+                <button class="botao" id="x2">x²</button>
+                <button class="botao" id="raizQuadrada"></button>
+                <button class="botao" id="multiplicacao"></button>
+                <button class="botao numero" id="numSete">7</button>
+                <button class="botao numero" id="numOito">8</button>
+                <button class="botao numero" id="numNove">9</button>
+                <button class="botao" id="subtracao"></button>
+                <button class="botao numero" id="numQuatro">4</button>
+                <button class="botao numero" id="numCinco">5</button>
+                <button class="botao numero" id="numSeis">6</button>
+                <button class="botao" id="adicao">+</button>
+                <button class="botao numero" id="numUm">1</button>
+                <button class="botao numero" id="numDois">2</button>
+                <button class="botao numero" id="numTres">3</button>
+                <button class="botao" id="igual">=</button>
+                <button class="botao" id="maisMenos"></button>
+                <button class="botao numero" id="numZero">0</button>
+                <button class="botao" id="ponto">.</button>
+                <button class="botao" id="mc">MC</button>
+                <button class="botao" id="mr">MR</button>
+                <button class="botao" id="mMais">M+</button>
+                <button class="botao" id="mMenos">M-</button>
+            </div>
+        </div>
+
+        <!-- Tela histórico-->
+        <div class="telaHistorico">
+            <div class="topoHistorico">
+                <h5>History</h5>
+                <button id="clear">Clear</button>
+            </div>
+            <!-- Histórico-->
+            <div id="historico">
+                No calculations yet
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

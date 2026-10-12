@@ -1,0 +1,201 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img_calculadora.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    display: flex;
+    gap: 10px;
+}
+
+#calculadora{    
+    display: grid;
+    gap: 10px;
+    border-radius: 10px;
+    background: rgba(5, 152, 160, 0.169);
+    backdrop-filter: blur(5px);
+}
+
+h2.titulo{
+    display: inline-block;
+    color: #374f54;
+    font-size: 2rem;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    margin: 20px 20px 0 20px;
+}
+
+.subTitulo p{
+    display: inline-block;
+    color: #373e54;
+    text-shadow: 0px 0px 3px rgb(255, 255, 255);
+    margin: 0 20px 0 20px;
+    letter-spacing: 2px;
+    font-size: 0.8rem;
+}
+
+.display{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    padding: 0 8px;
+    background: #1A202C;
+    margin: 0 20px 0 20px;
+    height: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 800;
+}
+
+.botoes{
+    margin: 0 20px 10px 20px;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 10px 30px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: #373e54;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    user-select: none;
+}
+.botao:hover{
+    background: #4f5465;
+}
+.botao:active{
+    transform: scale(0.95);
+    background-color: #646876;
+}
+
+#divisao{
+    background: #8f6502;
+}
+
+#multiplicacao{
+    background: #8f6502;
+}
+#multiplicacao::before{
+    content: "\00d7";
+}
+
+#subtracao{
+    background: #8f6502;
+}
+#subtracao::before{
+    content: "\2212";
+}
+#adicao{
+    background: #8f6502;
+}
+#igual{
+    background: #3257d0;
+    grid-area: 5 / 4 / 7 / 5;
+}
+
+#ce{
+    background: #3d3e42;
+}
+#ac{
+    background: #3d3e42;
+}
+#backSpace{
+    background: #3d3e42;
+}
+
+#backSpace::before{
+    content: "\232b";
+}
+#porcentagem{
+    background: #3d3e42;
+}
+#x2{
+    background: #3d3e42;
+}
+#raizQuadrada{
+    background: #3d3e42;
+}
+#raizQuadrada::before{
+    content: "\221A";
+}
+
+#maisMenos::before{
+    content: "\00b1";
+}
+#mc{
+    background: #3d3e42;
+}
+#mr{
+    background: #3d3e42;
+}
+#mMais{
+    background: #3d3e42;
+}
+#mMenos{
+    background: #3d3e42;
+}
+
+.telaHistorico{
+    border-radius: 10px;
+    background: rgba(5, 152, 160, 0.169);
+    backdrop-filter: blur(5px);
+}
+
+.topoHistorico{
+    margin: 0 10px 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.topoHistorico h5{
+    color: #374f54;
+    font-size: 1rem;
+    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+}
+
+
+button#clear{
+    padding: 7px 13px;
+    border-radius: 8px;
+    background: #373e54;
+    color: #fff;
+    border-style: none;
+    border: 2px solid #0593a0;
+    box-shadow: inset 0px 0px 1px #42ed04;
+    cursor: pointer;
+}
+
+button#clear:active{
+    transform: scale(0.95);
+}
+
+#historico{
+    margin: 10px 10px 0 10px;
+    padding: 7px;
+    text-align: center;
+    background: #373e54;
+    border-radius: 8px;
+    color: #fff;
+}
