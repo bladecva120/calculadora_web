@@ -160,6 +160,7 @@ h2.titulo{
     border-radius: 10px;
     background: rgba(5, 152, 160, 0.169);
     backdrop-filter: blur(5px);
+    width: 200px;
 }
 
 .topoHistorico{
@@ -172,13 +173,18 @@ h2.titulo{
 .topoHistorico h5{
     color: #374f54;
     font-size: 1rem;
+    text-align: center;
+    border-bottom: 1px solid #374f54;
+    border-top: 1px solid #374f54;
+    padding: 3px 0 3px 0;
     text-shadow: 2px 2px 2px rgb(255, 255, 255);
 }
 
 
 button#clear{
-    padding: 7px 13px;
-    border-radius: 8px;
+    padding: 12px 13px;
+    border-radius: 7px;
+    margin-left: 5px;
     background: #373e54;
     color: #fff;
     border-style: none;
@@ -192,10 +198,7 @@ button#clear:active{
 }
 
 #historico{
-    margin: 10px 10px 0 10px;
-    padding: 7px;
-    text-align: center;
+    padding: 3px 0 3px 10px;
     background: #373e54;
-    border-radius: 8px;
     color: #fff;
 }
