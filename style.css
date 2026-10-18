@@ -90,52 +90,106 @@ h2.titulo{
 }
 
 #divisao{
-    background: #8f6502;
+    background: #c88d03;
+}
+
+#divisao:hover{
+    background: #d79805;
 }
 
 #multiplicacao{
-    background: #8f6502;
+    background: #c88d03;
 }
+
+#multiplicacao:hover{
+    background: #d79805;
+}
+
 #multiplicacao::before{
     content: "\00d7";
 }
 
 #subtracao{
-    background: #8f6502;
+    background: #c88d03;
 }
+
+#subtracao:hover{
+    background: #d79805;
+}
+
 #subtracao::before{
     content: "\2212";
 }
+
 #adicao{
-    background: #8f6502;
+    background: #c88d03;
 }
+
+#adicao:hover{
+    background: #d79805;
+}
+
 #igual{
     background: #3257d0;
     grid-area: 5 / 4 / 7 / 5;
 }
 
+#igual:hover{
+    background: #4d75fb;
+}
+
 #ce{
     background: #3d3e42;
 }
+
+#ce:hover{
+    background: #55565a;
+}
+
 #ac{
     background: #3d3e42;
 }
+
+#ac:hover{
+    background: #55565a;
+}
+
 #backSpace{
     background: #3d3e42;
+}
+
+#backSpace:hover{
+    background: #55565a;
 }
 
 #backSpace::before{
     content: "\232b";
 }
+
 #porcentagem{
     background: #3d3e42;
 }
+
+#porcentagem:hover{
+    background: #55565a;
+}
+
 #x2{
     background: #3d3e42;
 }
+
+#x2:hover{
+    background: #55565a;
+}
+
 #raizQuadrada{
     background: #3d3e42;
 }
+
+#raizQuadrada:hover{
+    background: #55565a;
+}
+
 #raizQuadrada::before{
     content: "\221A";
 }
@@ -143,17 +197,37 @@ h2.titulo{
 #maisMenos::before{
     content: "\00b1";
 }
+
 #mc{
     background: #3d3e42;
 }
+
+#mc:hover{
+    background: #55565a;
+}
+
 #mr{
     background: #3d3e42;
 }
+
+#mr:hover{
+    background: #55565a;
+}
+
 #mMais{
     background: #3d3e42;
 }
+
+#mMais:hover{
+    background: #55565a;
+}
+
 #mMenos{
     background: #3d3e42;
+}
+
+#mMenos:hover{
+    background: #55565a;
 }
 
 .telaHistorico{
@@ -170,16 +244,16 @@ h2.titulo{
     align-items: center;
     color: #fff;
 }
+
 .topoHistorico h5{
     color: #374f54;
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-align: center;
     border-bottom: 1px solid #374f54;
     border-top: 1px solid #374f54;
     padding: 3px 0 3px 0;
-    text-shadow: 2px 2px 2px rgb(255, 255, 255);
+    text-shadow: -1px -1px 1px rgb(255, 255, 255);
 }
-
 
 button#clear{
     padding: 12px 13px;
