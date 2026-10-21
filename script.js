@@ -10,7 +10,7 @@ let iniciarNovoNumero = false;
 
 let memoria = 0;
 
-/* ============================== BOTÕES NUMÉRICOS ============================*/
+/* ============================== BOTÕES NUMÉRICOS ============================ */
 botoesNumericos.forEach(function(botao){
     botao.addEventListener('click', function(){
         let valorDoBotao = botao.textContent;
@@ -80,9 +80,8 @@ btnIgual.addEventListener('click', function(){
 
     if(operadorSelecionado === '+'){
         resultado = primeiroNumero + segundoNumero;
-        memoriaHistorico = (`${primeiroNumero} + ${segundoNumero} = ${resultado}`)
     }else if(operadorSelecionado === '-'){
-        resultado = primeiroNumero - segundoNumero;
+        resultado = Number((primeiroNumero - segundoNumero).toFixed(2));
     }else if(operadorSelecionado === '*'){
         resultado = primeiroNumero * segundoNumero;
     }else if(operadorSelecionado === '/'){
@@ -92,7 +91,7 @@ btnIgual.addEventListener('click', function(){
             iniciarNovoNumero = true;
             return;
         }
-        resultado = (primeiroNumero / segundoNumero).toFixed(2);
+        resultado = Number((primeiroNumero / segundoNumero).toFixed(2));
     }
 
     let simboloHistorico = operadorSelecionado;
@@ -237,7 +236,9 @@ btnRaizQuadrada.addEventListener('click', function(){
     }
 });
 
+/* ======================== BOTÃO +- ============================*/
 let btnMaisMenos = document.querySelector('#maisMenos');
+
 btnMaisMenos.addEventListener('click', function(){
 
     if(visor.textContent === 'Erro'){
@@ -249,9 +250,13 @@ btnMaisMenos.addEventListener('click', function(){
     valorAtual = valorAtual * (-1);
     visor.textContent = String(valorAtual);
 
+    if(operadorSelecionado === null){
+        iniciarNovoNumero = true;
+    }
+
 });
 
-/* ================= MC - MEMORY CLEAR =====================*/
+/* ================= MC - MEMORY CLEAR =======================*/
 let btnMC = document.querySelector('#mc');
 
 btnMC.addEventListener('click', function(){
